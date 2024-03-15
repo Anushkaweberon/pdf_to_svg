@@ -60,11 +60,8 @@ for file in ${output_dir}/*.pdf; do
     fi
 done
 
-echo "Search complete. PDF files containing the specified texts are kept."
+echo "Search complete."
 
 # Delete remaining files in pdf_pages directory
-echo "Cleaning up the directory..."
 rm -f "${output_dir}"/*.pdf
-# rm -f "${output_dir}"/*.svg
 
-echo "Cleanup complete."
